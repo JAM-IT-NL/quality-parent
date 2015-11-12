@@ -21,13 +21,13 @@
 				<version>2.7</version>
 				<configuration>
 					<check>
-						<branchRate>85</branchRate>
-						<lineRate>85</lineRate>
+						<branchRate>100</branchRate>
+						<lineRate>100</lineRate>
 						<haltOnFailure>true</haltOnFailure>
-						<totalBranchRate>85</totalBranchRate>
-						<totalLineRate>85</totalLineRate>
-						<packageLineRate>85</packageLineRate>
-						<packageBranchRate>85</packageBranchRate>
+						<totalBranchRate>100</totalBranchRate>
+						<totalLineRate>100</totalLineRate>
+						<packageLineRate>100</packageLineRate>
+						<packageBranchRate>100</packageBranchRate>
 					</check>
 				</configuration>
 				<executions>
@@ -63,6 +63,22 @@
 						<goals>
 							<goal>check</goal>
 						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.10</version>
+				<executions>
+					<execution>
+						<id>analyze</id>
+						<goals>
+							<goal>analyze-only</goal>
+						</goals>
+						<configuration>
+							<failOnWarning>true</failOnWarning>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
