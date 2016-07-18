@@ -1,0 +1,16 @@
+<FindBugsFilter>
+	
+	<!-- All bugs in generated packages -->
+	<Match>
+		<Package name="~.*generated.*" />
+	</Match>
+
+	<!-- All bugs in test classes, except for JUnit-specific bugs -->
+	<Match>
+		<Class name="~.*\.*Test" />
+		<Not>
+			<Bug code="IJU" />
+		</Not>
+	</Match>
+
+</FindBugsFilter>
