@@ -66,8 +66,6 @@
 						<target>${project.compile.jdk}</target>
 						<showWarnings>true</showWarnings>
 						<compilerArguments>
-							<bootclasspath>${env.JAVA_HOME}/jre/lib/rt.jar</bootclasspath>
-
 							<Werror />
 							<Xlint:all /> 
 							<Xlint:-processing />
