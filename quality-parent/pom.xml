@@ -241,13 +241,13 @@
 							<version>2.7</version>
 							<configuration>
 								<check>
-									<branchRate>80</branchRate>
-									<lineRate>80</lineRate>
+									<branchRate>50</branchRate>
+									<lineRate>70</lineRate>
 									<haltOnFailure>true</haltOnFailure>
-									<totalBranchRate>80</totalBranchRate>
-									<totalLineRate>80</totalLineRate>
-									<packageLineRate>80</packageLineRate>
-									<packageBranchRate>80</packageBranchRate>
+									<totalBranchRate>50</totalBranchRate>
+									<totalLineRate>70</totalLineRate>
+									<packageLineRate>70</packageLineRate>
+									<packageBranchRate>50</packageBranchRate>
 								</check>
 								<instrumentation>
 									<excludes>
