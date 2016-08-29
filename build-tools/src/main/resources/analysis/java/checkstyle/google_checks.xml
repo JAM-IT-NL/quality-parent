@@ -190,16 +190,6 @@
 		</module>
 		<module name="OverloadMethodsDeclarationOrder"/>
 		<module name="VariableDeclarationUsageDistance"/>
-		<module name="CustomImportOrder">
-			<!-- ##########################################################################################################
-			####### Set the special imports to nl.jam instead of com.google. ######################
-			###############################################################################################################-->
-			<property name="specialImportsRegExp" value="(nl.jam)"/>
-			<!--<property name="specialImportsRegExp" value="com.google"/>
-			#### End of customisation #### -->
-			<property name="sortImportsInGroupAlphabetically" value="true"/>
-			<property name="customImportOrderRules" value="STATIC###SPECIAL_IMPORTS###THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE"/>
-		</module>
 		<module name="MethodParamPad"/>
 		<module name="OperatorWrap">
 			<property name="option" value="NL"/>
