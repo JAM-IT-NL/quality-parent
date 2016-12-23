@@ -1,4 +1,2 @@
-image: maven:3-jdk-9
-
-build:
+maven-package:
   script: "mvn install -B"
