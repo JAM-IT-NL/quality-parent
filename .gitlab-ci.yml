@@ -14,7 +14,6 @@
 #   types:              # Define build stages
 
 # Predefined variables: https://docs.gitlab.com/ce/ci/variables/README.html
-
 variables:
   MAVEN_REPO: "$CI_PROJECT_DIR/.m2"
 
