@@ -1,2 +1,3 @@
-maven-package:
+build:
+  image: maven:latest
   script: "mvn install -B"
