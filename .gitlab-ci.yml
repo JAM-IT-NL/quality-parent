@@ -1,3 +1,13 @@
-build:
+# Gitlab specific commands:
+# before_script:
+
+# Named build:
+# {name}:
+#   script:
+#     - mvn install -B # Run in non-interactive (batch) mode (-B)
+
+build:maven:
+  stage: build
   image: maven:latest
-  script: "mvn install -B" # Run in non-interactive (batch) mode (-B)
+  script: 
+    - mvn install -B
