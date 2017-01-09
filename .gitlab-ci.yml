@@ -23,6 +23,6 @@ build:maven:
   script: 
     - mvn -Dmaven.repo.local=$MAVEN_REPO install -B
   cache:
-    key: "$CI_BUILD_REF_NAME"
+    key: "$CI_BUILD_STAGE"
     paths:
       - .m2
