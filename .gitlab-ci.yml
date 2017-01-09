@@ -18,12 +18,12 @@
 variables:
   MAVEN_REPO: "$CI_PROJECT_DIR/.m2"
 
-cache:
-  paths:
-    - .m2
-
 build:maven:
   stage: build
   image: maven:latest
   script: 
     - mvn -Dmaven.repo.local=$MAVEN_REPO install -B
+  cache:
+    key: "$CI_BUILD_REF_NAME"
+    paths:
+      - .m2
