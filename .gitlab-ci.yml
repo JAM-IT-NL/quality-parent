@@ -26,4 +26,4 @@ build:maven:
   cache:
     key: "$CI_BUILD_STAGE"
     paths:
-      - .m2
+      - .m2/
