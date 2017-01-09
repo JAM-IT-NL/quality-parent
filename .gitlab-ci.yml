@@ -15,11 +15,8 @@
 
 # Predefined variables: https://docs.gitlab.com/ce/ci/variables/README.html
 
-variables:
-  MAVEN_OPTS: -Dmaven.repo.local=/cache/.m2
-
 build:maven:
   stage: build
-  image: maven:3.3.9-jdk-8
+  image: maven:latest
   script: 
     - mvn install -B
