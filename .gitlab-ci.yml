@@ -1,13 +1,28 @@
 # Gitlab specific commands:
-# before_script:
+# before_script:        # Define commands that run before each job's script
+# after_script:         # Define commands that run after each job's script
+# variables:            # Define (internal) build variables
+# cache:                # Define list of files that should be cached between subsequent runs
 
-# Named build:
+# Named build syntax:
 # {name}:
 #   script:
-#     - mvn install -B # Run in non-interactive (batch) mode (-B)
+#     - mvn install -B  # Run in non-interactive (batch) mode (-B)
+#   image:              # Use docker image
+#   services:           # Use docker services
+#   stages:             # Define build stages, default is test
+#   types:              # Define build stages
+
+# Predefined variables: https://docs.gitlab.com/ce/ci/variables/README.html
+variables:
+  MAVEN_REPO: "$CI_PROJECT_DIR/.m2"
+
+cache:
+  paths:
+    - .m2
 
 build:maven:
   stage: build
   image: maven:latest
   script: 
-    - mvn install -B
+    - mvn -Dmaven.repo.local=$MAVEN_REPO install -B
