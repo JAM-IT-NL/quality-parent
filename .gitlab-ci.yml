@@ -14,15 +14,12 @@
 #   types:              # Define build stages
 
 # Predefined variables: https://docs.gitlab.com/ce/ci/variables/README.html
+
 variables:
-  MAVEN_REPO: "$CI_PROJECT_DIR/.m2"
+  MAVEN_OPTS: -Dmaven.repo.local=/cache/.m2
 
 build:maven:
   stage: build
   image: maven:latest
   script: 
-    - mvn -Dmaven.repo.local=$MAVEN_REPO install -B
-  cache:
-    key: "$CI_BUILD_STAGE"
-    paths:
-      - .m2/
+    - mvn install -B
