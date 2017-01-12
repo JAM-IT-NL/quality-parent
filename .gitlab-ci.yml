@@ -15,6 +15,10 @@
 
 # Predefined variables: https://docs.gitlab.com/ce/ci/variables/README.html
 
+before_script:
+  - git submodule sync --recursive
+  - git submodule update --init --recursive
+
 build:maven:
   stage: build
   image: maven:latest
