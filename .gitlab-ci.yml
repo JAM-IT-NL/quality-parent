@@ -23,4 +23,4 @@ build:maven:
   stage: build
   image: maven:latest
   script: 
-    - mvn install -B
+    - mvn install -B --settings $CI_PROJECT_DIR/maven-settings/settings.xml
