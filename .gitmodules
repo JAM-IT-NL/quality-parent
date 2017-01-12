@@ -1,0 +1,3 @@
+[submodule "maven-settings"]
+  path = maven-settings
+  url = ../maven-settings.git

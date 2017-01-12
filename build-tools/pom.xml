@@ -7,6 +7,12 @@
 	<groupId>nl.jam</groupId>
 	<artifactId>build-tools</artifactId>
 	<version>0.2.2</version>
+	
+	<parent>
+		<artifactId>quality-parent-parent</artifactId>
+		<version>0.0.1</version>
+		<groupId>nl.jam</groupId>
+	</parent>
 
 	<build>
 		<plugins>
