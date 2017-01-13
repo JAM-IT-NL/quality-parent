@@ -18,7 +18,7 @@
 before_script:
   #- git submodule sync --recursive
   #- git submodule update --init --recursive
-  - git clone https://gitlab.com/jam.nl/maven-settings.git maven-settings
+  - git clone https://gitlab-ci-token@gitlab.com/jam.nl/maven-settings.git maven-settings
 
 build:maven:
   stage: build
