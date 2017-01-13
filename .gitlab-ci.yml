@@ -18,10 +18,9 @@
 before_script:
   - git submodule sync --recursive
   - git submodule update --init --recursive
-  - ls -a $CI_PROJECT_DIR
 
 build:maven:
   stage: build
   image: maven:latest
   script: 
-    - mvn install -B --settings $CI_PROJECT_DIR/maven-settings/settings.xml
+    - mvn deploy -B --settings $CI_PROJECT_DIR/maven-settings/settings.xml
