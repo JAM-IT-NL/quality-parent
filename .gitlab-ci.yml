@@ -2,7 +2,8 @@
 #
 # Author: Martijn Raats
 
-#before_script:
+before_script:
+  - wget http://37.97.223.73:8081/
 #  - git submodule add ../../jam.nl/maven-settings.git maven-settings
 
 variables:
