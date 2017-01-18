@@ -2,8 +2,8 @@
 #
 # Author: Martijn Raats
 
-before_script:
-  - git submodule add ../../jam.nl/maven-settings.git maven-settings
+#before_script:
+#  - git submodule add ../../jam.nl/maven-settings.git maven-settings
 
 variables:
   MAVEN_OPTS: "-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=WARN -Dorg.slf4j.simpleLogger.showDateTime=true -Djava.awt.headless=true"
