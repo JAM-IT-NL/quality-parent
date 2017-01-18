@@ -32,14 +32,14 @@ cache:
 # Because some enforcer rules might check dependency convergence and class duplications
 # we use `test-compile` here instead of `validate`, so the correct classpath is picked up.
 validate:
-  image: maven:3.3.9-jdk-8
+  image: maven:latest
   stage: build
   script:
     - 'mvn $MAVEN_CLI_OPTS test-compile'
   
 # For merge requests do not `deploy` but only run `verify`.
 .verify:
-  image: maven:3.3.9-jdk-8
+  image: maven:latest
   stage: test
   script:
     - 'mvn $MAVEN_CLI_OPTS verify'
@@ -48,11 +48,11 @@ validate:
 
 # For `master` branch run `mvn deploy` automatically.
 deploy:jdk8:
-  # Use stage test here, so the pages job may later pickup the created site.
-  stage: test
+  image: maven:latest
+  stage: deploy
   script:
     - 'mvn $MAVEN_CLI_OPTS deploy'
   only:
     - master
-  image: maven:3.3.9-jdk-8
+  
 
