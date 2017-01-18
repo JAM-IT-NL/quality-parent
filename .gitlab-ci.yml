@@ -34,7 +34,8 @@ release:
     - 'mvn $MAVEN_CLI_OPTS verify'
   artifacts:
     paths:
-    - "*/*.ear"
-    - "*/*/*.ear"
+    - "*/target/*.jar"
+    - "*/target/*.war"
+    - "*/target/*.ear"
   only:
     - release
