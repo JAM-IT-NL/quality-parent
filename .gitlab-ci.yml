@@ -13,13 +13,14 @@ cache:
   paths:
     - /root/.m2/repository/
   
-.verify:
+verify:
   image: maven:latest
   stage: test
   script:
     - 'mvn $MAVEN_CLI_OPTS verify'
   except:
     - master
+    - release
 
 deploy:
   image: maven:latest
@@ -28,3 +29,15 @@ deploy:
     - 'mvn $MAVEN_CLI_OPTS deploy'
   only:
     - master
+
+release:
+  image: maven:latest
+  stage: deploy
+  script:
+    - 'mvn $MAVEN_CLI_OPTS verify'
+  artifacts:
+    paths:
+    - "*/*.ear"
+    - "*/*/*.ear"
+  only:
+    - release
