@@ -270,6 +270,7 @@
 										<!-- Third party code -->
 										<exclude>org/h2/**</exclude>
 										<exclude>org/springframework/**</exclude>
+										<exclude>pl/jsolve/templ4docx/**</exclude>
 									</excludes>
 								</instrumentation>	
 							</configuration>								
