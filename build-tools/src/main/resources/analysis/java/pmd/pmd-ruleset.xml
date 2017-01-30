@@ -11,6 +11,7 @@
 	<exclude-pattern>.*/generated/*.*</exclude-pattern>
 	<exclude-pattern>.*/metamodel/*.*</exclude-pattern> 
 	<exclude-pattern>.*/org/springframework/*.*</exclude-pattern> 
+	<exclude-pattern>.*/pl/jsolve/templ4docx/*.*</exclude-pattern> 
 
 	<rule ref="rulesets/java/android.xml"/>
 	<!-- CollapsibleIfStatements kept in rulesset for now, can be reconsiderd later. -->
