@@ -249,10 +249,10 @@
 									<branchRate>40</branchRate>
 									<lineRate>65</lineRate>
 									<haltOnFailure>true</haltOnFailure>
-									<totalBranchRate>50</totalBranchRate>
-									<totalLineRate>70</totalLineRate>
-									<packageLineRate>70</packageLineRate>
-									<packageBranchRate>50</packageBranchRate>
+									<totalBranchRate>40</totalBranchRate>
+									<totalLineRate>65</totalLineRate>
+									<packageLineRate>65</packageLineRate>
+									<packageBranchRate>40</packageBranchRate>
 								</check>
 								<instrumentation>
 									<excludes>
