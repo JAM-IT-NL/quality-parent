@@ -21,7 +21,7 @@
 		<repository>
 	        <id>central</id>
 	        <name>releases</name>
-	        <url>http://nexus:8082/nexus/content/repositories/releases/</url>
+	        <url>http://nexus:8081/nexus/content/repositories/releases/</url>
 	    </repository>
 	    <snapshotRepository>
 	        <id>snapshots</id>
