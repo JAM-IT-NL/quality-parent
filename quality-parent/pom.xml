@@ -7,7 +7,7 @@
 	<version>1.0.1</version>
 	<groupId>nl.jam</groupId>
 	<packaging>pom</packaging>
-	
+
 	<parent>
 		<artifactId>quality-parent-parent</artifactId>
 		<version>0.0.1</version>
@@ -72,10 +72,16 @@
 						<showWarnings>true</showWarnings>
 						<compilerArguments>
 							<Werror />
-							<Xlint:all /> 
+							<Xlint:all />
 							<Xlint:-processing />
 						</compilerArguments>
 					</configuration>
+				</plugin>
+				<!-- Run junit tests and fail on failing tests -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.19.1</version>
 				</plugin>
 				<!-- Reporting -->
 				<plugin>
@@ -123,7 +129,7 @@
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-dependency-plugin</artifactId>
-							<version>2.10</version>
+							<version>3.0.0</version>
 							<configuration>
 								<failOnWarning>true</failOnWarning>
 								<ignoreNonCompile>true</ignoreNonCompile>
@@ -135,12 +141,6 @@
 									</goals>
 								</execution>
 							</executions>
-						</plugin>
-						<!-- Run junit tests and fail on failing tests -->
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>2.19.1</version>
 						</plugin>
 						<!-- Run integration tests and fail on failing tests -->
 						<plugin>
@@ -264,7 +264,7 @@
 										<exclude>**/config/**</exclude>
 										<exclude>**/*Config.class</exclude>
 										<!-- Exception -->
-										<exclude>**/*Exception.class</exclude>										
+										<exclude>**/*Exception.class</exclude>
 										<!-- Generated code -->
 										<exclude>**/generated/**</exclude>
 										<!-- Third party code -->
@@ -272,17 +272,17 @@
 										<exclude>org/springframework/**</exclude>
 										<exclude>pl/jsolve/templ4docx/**</exclude>
 									</excludes>
-								</instrumentation>	
-							</configuration>								
-							<executions>								
+								</instrumentation>
+							</configuration>
+							<executions>
 								<execution>
 									<goals>
 										<goal>clean</goal>
 										<goal>check</goal>
 									</goals>
-								</execution>								
+								</execution>
 							</executions>
-						</plugin>			
+						</plugin>
 					</plugins>
 				</pluginManagement>
 
@@ -313,12 +313,12 @@
 					</plugin>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>cobertura-maven-plugin</artifactId>		
+						<artifactId>cobertura-maven-plugin</artifactId>
 						<configuration>
 							<formats>
 								<format>xml</format>
 							</formats>
-						</configuration>						
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
