@@ -26,6 +26,8 @@
 		<exclude name="DataflowAnomalyAnalysis"/>
 		<!-- Early return makes readable code, so one return disabled. -->
 		<exclude name="OnlyOneReturn"/>
+		<!-- Cannot find a LinkedHashMap that is also Concurrent -->
+		<exclude name="UseConcurrentHashMap"/>	
 	</rule>
 	<rule ref="rulesets/java/coupling.xml">
 		<exclude name="LawOfDemeter"/>
