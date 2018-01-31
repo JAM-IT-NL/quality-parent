@@ -14,7 +14,7 @@
 
 	<modules>
 		<module>build-tools</module>
-		<module>quality-parent</module>
+		<module>quality-parent</module>	
 	</modules>
 	
 	<distributionManagement>
