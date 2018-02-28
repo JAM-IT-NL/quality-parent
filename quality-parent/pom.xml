@@ -4,8 +4,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.0.2</version>
-	<groupId>nl.jam</groupId>
+	<version>1.0.3</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -15,7 +14,7 @@
 	</parent>
 
 	<properties>
-		<build-tools.version>0.2.2</build-tools.version>
+		<build-tools.version>0.2.3</build-tools.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

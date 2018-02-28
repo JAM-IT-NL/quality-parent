@@ -27,7 +27,9 @@
 		<!-- Early return makes readable code, so one return disabled. -->
 		<exclude name="OnlyOneReturn"/>
 		<!-- Cannot find a LinkedHashMap that is also Concurrent -->
-		<exclude name="UseConcurrentHashMap"/>	
+		<exclude name="UseConcurrentHashMap"/>
+		<!-- I don't want to add static variable for NULL or ONE, TWO etc -->
+		<exclude name="AvoidLiteralsInIfCondition"/>	
 	</rule>
 	<rule ref="rulesets/java/coupling.xml">
 		<exclude name="LawOfDemeter"/>
