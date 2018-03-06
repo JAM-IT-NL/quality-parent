@@ -38,6 +38,8 @@
 		<properties>
 	        <property name="violationSuppressRegex" value=".*Test"/>
 	    </properties>
+	    <!-- Comparing with == can give different result then with equals(), in case of HighlightingDelimiterProcessor comparing with equals resulted in error in unittest -->
+		<exclude name="CompareObjectsWithEquals"/>
 	</rule>
 	<rule ref="rulesets/java/empty.xml"/>
 	<rule ref="rulesets/java/finalizers.xml"/>

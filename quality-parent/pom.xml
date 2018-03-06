@@ -71,7 +71,7 @@
 						<showWarnings>true</showWarnings>
 						<compilerArguments>
 							<Werror />
-							<Xlint:all />
+							<` />
 							<Xlint:-processing />
 						</compilerArguments>
 					</configuration>
