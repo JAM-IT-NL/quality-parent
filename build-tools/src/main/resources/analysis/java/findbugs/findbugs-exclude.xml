@@ -4,6 +4,10 @@
 	<Match>
 		<Package name="~.*generated.*" />
 	</Match>
+	
+	<Match>
+		<Package name="~.*com.cryptlex.lexactivator.*" />
+	</Match>
 
 	<!-- All bugs in test classes, except for JUnit-specific bugs -->
 	<Match>

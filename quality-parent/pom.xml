@@ -173,6 +173,7 @@
 									<phase>validate</phase>
 									<configuration>
 										<configLocation>analysis/java/checkstyle/google_checks.xml</configLocation>
+										<suppressionsLocation>analysis/java/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
 										<encoding>UTF-8</encoding>
 										<consoleOutput>true</consoleOutput>
 										<failsOnError>true</failsOnError>
