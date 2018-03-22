@@ -1,4 +1,10 @@
 <FindBugsFilter>
+
+	<Match>
+	   <Class name="nl.jam.licensing.WordtTemplaterLicense" />
+	   <Method name="isInDevelopment" />
+	   <Bug pattern="REC_CATCH_EXCEPTION" />
+	</Match>
 	
 	<!-- All bugs in generated packages -->
 	<Match>
