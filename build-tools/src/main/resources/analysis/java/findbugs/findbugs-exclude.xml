@@ -6,6 +6,12 @@
 	   <Bug pattern="REC_CATCH_EXCEPTION" />
 	</Match>
 	
+	<Match>
+	   <Class name="nl.jam.licensing.WordtTemplaterLicense" />
+	   <Method name="getProjectId" />
+	   <Bug pattern="REC_CATCH_EXCEPTION" />
+	</Match>
+	
 	<!-- All bugs in generated packages -->
 	<Match>
 		<Package name="~.*generated.*" />
