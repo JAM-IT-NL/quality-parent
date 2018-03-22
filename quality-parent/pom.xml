@@ -271,6 +271,7 @@
 										<exclude>org/h2/**</exclude>
 										<exclude>org/springframework/**</exclude>
 										<exclude>pl/jsolve/templ4docx/**</exclude>
+										<exclude>com/cryptlex/lexactivator/**</exclude>
 									</excludes>
 								</instrumentation>
 							</configuration>
