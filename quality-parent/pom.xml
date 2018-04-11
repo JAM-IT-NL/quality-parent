@@ -5,7 +5,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -240,50 +240,30 @@
 							</executions>
 						</plugin>
 						<!-- Fail when not enough code coverage -->
+
 						<plugin>
-							<groupId>org.codehaus.mojo</groupId>
-							<artifactId>cobertura-maven-plugin</artifactId>
-							<version>2.7</version>
-							<configuration>
-								<check>
-									<branchRate>40</branchRate>
-									<lineRate>65</lineRate>
-									<haltOnFailure>true</haltOnFailure>
-									<totalBranchRate>40</totalBranchRate>
-									<totalLineRate>65</totalLineRate>
-									<packageLineRate>65</packageLineRate>
-									<packageBranchRate>40</packageBranchRate>
-								</check>
-								<instrumentation>
-									<excludes>
-										<!-- Test -->
-										<exclude>**/*Test.class</exclude>
-										<exclude>**/Test*.class</exclude>
-										<exclude>**/test/**</exclude>
-										<!-- Config -->
-										<exclude>**/config/**</exclude>
-										<exclude>**/*Config.class</exclude>
-										<!-- Exception -->
-										<exclude>**/*Exception.class</exclude>
-										<!-- Generated code -->
-										<exclude>**/generated/**</exclude>
-										<!-- Third party code -->
-										<exclude>org/h2/**</exclude>
-										<exclude>org/springframework/**</exclude>
-										<exclude>pl/jsolve/templ4docx/**</exclude>
-										<exclude>com/cryptlex/lexactivator/**</exclude>
-									</excludes>
-								</instrumentation>
-							</configuration>
-							<executions>
+						    <groupId>org.pitest</groupId>
+						    <artifactId>pitest-maven</artifactId>
+						    <version>1.3.2</version>
+						    <configuration>
+						    	<!-- http://pitest.org/quickstart/maven/ -->
+						        <targetClasses>
+						            <param>nl.jam.*</param>
+						        </targetClasses>
+						        <targetTests>
+						            <param>nl.jam.*</param>
+						        </targetTests>
+						        <mutationThreshold>33</mutationThreshold>
+						        <coverageThreshold>65</coverageThreshold>
+						    </configuration>
+						    <executions>
 								<execution>
 									<goals>
-										<goal>clean</goal>
-										<goal>check</goal>
+										<goal>mutationCoverage</goal>
 									</goals>
 								</execution>
 							</executions>
-						</plugin>
+						 </plugin>
 					</plugins>
 				</pluginManagement>
 
@@ -313,13 +293,8 @@
 						<artifactId>maven-failsafe-plugin</artifactId>
 					</plugin>
 					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>cobertura-maven-plugin</artifactId>
-						<configuration>
-							<formats>
-								<format>xml</format>
-							</formats>
-						</configuration>
+					    <groupId>org.pitest</groupId>
+					    <artifactId>pitest-maven</artifactId>
 					</plugin>
 				</plugins>
 			</build>
