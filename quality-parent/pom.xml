@@ -254,6 +254,7 @@
 										<element>CLASS</element>
 										<excludes>
 											<exclude>*Test</exclude>
+											<exclude>*Exception</exclude>
 										</excludes>
 										<limits>
 											<limit>
