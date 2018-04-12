@@ -132,6 +132,12 @@
 	    </properties>
 	</rule>
 	
+	<rule ref="rulesets/java/codesize.xml/NcssCount">
+	    <properties>
+	        <property name="methodReportLevel" value="25"/>
+	    </properties>
+	</rule>
+	
 	<rule ref="rulesets/java/codesize.xml/ModifiedCyclomaticComplexity">
 		<properties>
 			<property name="reportLevel" value="26" />
