@@ -257,6 +257,7 @@
 										<excludes>
 											<exclude>*Test</exclude>
 											<exclude>*Exception</exclude>
+											<exclude>nl.nn.jam.azure.api.*</exclude>
 										</excludes>
 										<limits>
 											<limit>
