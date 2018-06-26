@@ -7,12 +7,7 @@
 	<name>${project.artifactId}</name>
 	<version>1.0.6</version>
 	<packaging>pom</packaging>
-
-	<parent>
-		<artifactId>quality-parent-parent</artifactId>
-		<version>0.0.2</version>
-		<groupId>nl.jam</groupId>
-	</parent>
+	<groupId>nl.jam</groupId>
 
 	<properties>
 		<build-tools.version>0.2.3</build-tools.version>
@@ -168,7 +163,7 @@
 							<version>3.0.0</version>
 							<dependencies>
 								<dependency>
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -199,7 +194,7 @@
 							<version>3.9.0</version>
 							<dependencies>
 								<dependency>
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -226,7 +221,7 @@
 							<version>3.1.3</version>
 							<dependencies>
 								<dependency>
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
