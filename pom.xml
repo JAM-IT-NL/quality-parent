@@ -5,7 +5,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.0.8</version>
+	<version>1.0.9</version>
 	<packaging>pom</packaging>
 	<groupId>nl.jam</groupId>
 
@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.compile.jdk>1.8</project.compile.jdk>
-		
+
 		<poi.version>3.17</poi.version>
 	</properties>
 
@@ -317,11 +317,18 @@
 			</build>
 		</profile>
 	</profiles>
-	
+
 	<repositories>
 		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
