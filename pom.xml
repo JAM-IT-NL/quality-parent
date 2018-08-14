@@ -5,7 +5,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.1.3</version>
+	<version>1.1.4</version>
 	<packaging>pom</packaging>
 	<groupId>nl.jam</groupId>
 	
@@ -33,7 +33,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>3.0.0-M1</version>
+					<version>3.0.0-M2</version>
 					<executions>
 						<execution>
 							<id>enforce-versions</id>
@@ -63,7 +63,7 @@
 						<dependency>
 							<groupId>org.codehaus.mojo</groupId>
 							<artifactId>extra-enforcer-rules</artifactId>
-							<version>1.0-beta-7</version>
+							<version>1.0-beta-9</version>
 						</dependency>
 					</dependencies>
 				</plugin>
