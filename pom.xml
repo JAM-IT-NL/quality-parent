@@ -10,7 +10,7 @@
 	<groupId>nl.jam</groupId>
 	
 	<properties>
-		<build-tools.version>0.2.6</build-tools.version>
+		<build-tools.version>0.2.7</build-tools.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -204,6 +204,7 @@
 								<rulesets>
 									<ruleset>analysis/java/pmd/pmd-ruleset.xml</ruleset>
 								</rulesets>
+								<analysisCache>true</analysisCache>
 							</configuration>
 							<executions>
 								<execution>
