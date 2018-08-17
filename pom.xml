@@ -5,16 +5,10 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.1.4</version>
+	<version>1.1.5</version>
 	<packaging>pom</packaging>
 	<groupId>nl.jam</groupId>
 	
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
-	</parent>
-
 	<properties>
 		<build-tools.version>0.2.6</build-tools.version>
 
