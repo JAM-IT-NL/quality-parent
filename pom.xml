@@ -5,7 +5,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.1.5</version>
+	<version>1.1.6</version>
 	<packaging>pom</packaging>
 	<groupId>nl.jam</groupId>
 	
@@ -254,6 +254,7 @@
 											<exclude>*Test</exclude>
 											<exclude>*Exception</exclude>
 											<exclude>nl.nn.jam.azure.api.*</exclude>
+											<exclude>*.config.*</exclude>
 										</excludes>
 										<limits>
 											<limit>
