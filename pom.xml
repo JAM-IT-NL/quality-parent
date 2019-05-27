@@ -5,16 +5,16 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>1.2.0</version>
+	<version>1.2.1</version>
 	<packaging>pom</packaging>
 	<groupId>nl.jam</groupId>
-	
+
 	<properties>
-		<build-tools.version>0.2.8</build-tools.version>
+		<build-tools.version>0.2.9</build-tools.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		
+
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.compile.jdk>1.8</project.compile.jdk>
@@ -166,7 +166,8 @@
 							<version>3.0.0</version>
 							<dependencies>
 								<dependency>
-									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
+									<groupId>nl.jam</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -197,7 +198,8 @@
 							<version>3.9.0</version>
 							<dependencies>
 								<dependency>
-									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
+									<groupId>nl.jam</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -213,7 +215,6 @@
 								<execution>
 									<goals>
 										<goal>check</goal>
-										<goal>cpd-check</goal>
 									</goals>
 								</execution>
 							</executions>
@@ -225,7 +226,8 @@
 							<version>3.1.3</version>
 							<dependencies>
 								<dependency>
-									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
+									<groupId>nl.jam</groupId>
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -255,6 +257,7 @@
 										<element>CLASS</element>
 										<excludes>
 											<exclude>*Test</exclude>
+											<exclude>*generated*</exclude>
 											<exclude>*Exception</exclude>
 											<exclude>nl.nn.jam.azure.api.*</exclude>
 											<exclude>*.config.*</exclude>
