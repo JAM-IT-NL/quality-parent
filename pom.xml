@@ -166,8 +166,8 @@
 							<version>3.0.0</version>
 							<dependencies>
 								<dependency>
-									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>nl.jam</groupId> -->
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -198,8 +198,8 @@
 							<version>3.9.0</version>
 							<dependencies>
 								<dependency>
-									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>nl.jam</groupId> -->
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
@@ -226,8 +226,8 @@
 							<version>3.1.12</version>
 							<dependencies>
 								<dependency>
-									<!-- <groupId>com.github.JAM-IT-NL</groupId> -->
-									<groupId>nl.jam</groupId>
+									<groupId>com.github.JAM-IT-NL</groupId>
+									<!-- <groupId>nl.jam</groupId> -->
 									<artifactId>build-tools</artifactId>
 									<version>${build-tools.version}</version>
 								</dependency>
