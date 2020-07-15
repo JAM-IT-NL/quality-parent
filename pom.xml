@@ -5,7 +5,7 @@
 
 	<artifactId>quality-parent</artifactId>
 	<name>${project.artifactId}</name>
-	<version>2.0.0</version>
+	<version>2.0.2</version>
 	<packaging>pom</packaging>
 	
 	<!-- <groupId>nl.jam</groupId> -->
@@ -275,12 +275,12 @@
 											<limit>
 												<counter>LINE</counter>
 												<value>COVEREDRATIO</value>
-												<minimum>65%</minimum>
+												<minimum>50%</minimum>
 											</limit>
 											<limit>
 												<counter>BRANCH</counter>
 												<value>COVEREDRATIO</value>
-												<minimum>40%</minimum>
+												<minimum>25%</minimum>
 											</limit>
 										</limits>
 									</rule>
